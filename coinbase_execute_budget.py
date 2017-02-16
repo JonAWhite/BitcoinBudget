@@ -38,7 +38,7 @@ for budget_account in budget_accounts:
     budget_account_amount_btc = float("{0:.8f}".format(budget_account_amount_usd / float(bitcoin_paid_price_in_usd)))
     total_btc += budget_account_amount_btc
     print 'Transfering ' + str(budget_account_amount_btc) + ' BTC from ' + primary_account.name + ' (' + primary_account.id + ') to ' + budget_account_name + ' (' + budget_account_id + ')' 
-    client.transfer_money(primary_account.id, to=budget_account_id, amount=str(budget_account_amount_btc), currency="BTC")
+    #client.transfer_money(primary_account.id, to=budget_account_id, amount=str(budget_account_amount_btc), currency="BTC")
 
 print 'BTC-USD Spot Price: ' + str(bitcoin_spot_price_in_usd)
 print 'BTC-USD Paid Price: ' + bitcoin_paid_price_in_usd
