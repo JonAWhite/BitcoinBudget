@@ -1,9 +1,7 @@
 from geminipy import Geminipy
 import argparse
-import math
 import sys
 from decimal import *
-
 
 getcontext().prec = 28 
 getcontext().mode = ROUND_HALF_EVEN
